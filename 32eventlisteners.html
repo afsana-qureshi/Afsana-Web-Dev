@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+</head>
+<body>
+    <button id="clicked">Click Me</button>
+    <script>
+   // document.getElementById('id').addEventListener('event', function)
+   let click = document.getElementById('clicked')
+   click.addEventListener('dblclick', clicked)
+   function clicked(){
+    //alert(`You have c licked the button`)
+    click.innerHTML = `Clicked`
+   }
+    </script>
+</body>
+</html>

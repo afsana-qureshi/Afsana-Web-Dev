@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Practice</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            background-color: rgb(176, 228, 237);
+            border-color: rgb(215, 204, 204) 1px;
+            width: 50%;
+        }
+        th, td{
+            padding: 10px;
+            border: 1px solid rgb(203, 187, 187);
+            color: rgb(52, 18, 18);
+        }
+        h1{
+            text-decoration: underline;
+            text-align: center;
+        }
+        th{
+            background-color: rgb(6, 4, 4);
+            color: rgb(211, 214, 216);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practice Table</h1>
+    <table align="center">
+        <thead>
+            <tr>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="7">You can span down</td>
+            </tr>
+            <tr>
+                <td colspan="3">You can span across</td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">It's like a puzzle</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Over here</td>
+            </tr>
+            <tr>
+                <td rowspan="4">This way</td>
+            </tr>
+            <tr>
+                <td>That way</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Where am I?</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

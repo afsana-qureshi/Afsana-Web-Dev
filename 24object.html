@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        let contact = {
+            name : "John",
+            email : "abc@gmail.com",
+            ph_number : 4576867,
+            company : "xyz",
+            city : "Karachi",
+            location : {
+                latitude : 5645,
+                longitude : 6774,
+            },
+            greet(){
+                console.log(`Hello my name is ${this.name} and my email is ${contact.email}`)
+            }
+        } 
+
+    let contact2 = contact
+        contact2.name = "Alex"
+
+        console.log(contact==contact2);
+
+    let object1 = {
+                message : "hello"
+            }
+
+    let object2 = {
+                message : "hello"
+            }
+        console.log(object1==object2)
+
+        delete contact2.email
+        console.log(contact.email)
+
+        console.log(contact.location.latitude);
+        contact.isLinkedIn = true
+        contact.greet() 
+        //contact.name = "Doe" 
+        delete contact.location 
+        console.log(contact['name']); 
+        console.log(contact);
+
+        let a = 5
+        let b = 5
+        console.log(a==b)
+    </script>
+</body>
+</html>

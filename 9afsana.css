@@ -1,0 +1,60 @@
+.link{
+    text-decoration: none;
+    background-color: black;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 15px;
+}
+img{
+    display: flex;
+    width: 400px;
+    
+}
+h3{
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+th, td{
+    border: 1px solid black;
+    text-align: left;
+    
+}
+table{
+    border-collapse: collapse;
+    width: 35%;
+    height: 140px;
+
+}
+div{
+    justify-content: center;
+    display: flex;
+}
+form label{
+    display: block;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    margin-top: 10px;
+}
+form{
+            background-color: whitesmoke;
+              width: 30%;
+              border: 1px solid black;
+              margin: auto;
+              padding: 10px;
+
+       }
+       button{
+        background-color: black;
+        color: white;
+        justify-content: center;
+        
+       }
+       fieldset{
+        border: none;
+       }

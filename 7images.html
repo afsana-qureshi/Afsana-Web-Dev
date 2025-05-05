@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+        img{
+            width: 300px;
+        }
+    .centered-table{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="image1.jpg" alt="image">
+    </div>
+
+    <div class="centered-table">
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Topic</th>
+            </tr>
+            <tr>
+                <td rowspan="3">Monday</td>
+                <td>9:00 am to 10:00 am</td>
+                <td>Introduction to Web Development</td>
+            </tr>
+            <tr>
+                <td>10:00 am to 11:00am</td>
+                <td rowspan="2">Software Development</td>
+            </tr>
+            <tr>
+                <td>11:00am to 12:00 pm</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td colspan="2" class="highlight">No Class</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Wednesday</td>
+                <td colspan="2">Break</td>
+            </tr>
+            <tr>
+                <td>12:00 pm to 1:00 pm</td>
+                <td rowspan="2">Mobile App Development</td>
+            </tr>
+            <tr>
+                <td>1:00 pm to 2:00 pm</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

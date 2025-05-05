@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Table</title>
+    <style>
+        img{
+            width: 300px;
+            height: auto;
+        }
+        video{
+            width: 300px;
+            height: auto;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        /*audio::-webkit-media-controls-panel{
+            background-color: rgb(155, 174, 232);
+        }*/
+        audio{
+            filter: invert(1);
+        }
+    </style>
+</head>
+<body>
+    <table border="" align="center">
+        <thead>
+            <th>Media Type</th>
+            <th>Example</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Image</td>
+                <td>
+                    <img src="image5.png" alt="image">
+                </td>
+            </tr>
+            <tr>
+                <td>Video</td>
+                <td>
+                    <video controls autoplay>
+                        <source src="video1.mp4">
+                    </video>
+                </td>
+            </tr>
+            <tr>
+                <td>Audio</td>
+                <td>
+                    <audio controls autoplay>
+                        <source src="audio1.mp3">
+                    </audio>
+                </td>
+            </tr>
+            <tr>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

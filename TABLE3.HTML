@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        table{
+            background-color: beige;
+            width: 80%;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid grey;
+            padding: 10px;
+            text-align: center;
+        }
+        th{
+            background-color: black;
+            color: beige;
+        }
+        .heading{
+            text-align: center;
+            text-decoration: underline solid black;
+        }
+        .highlight{
+            background-color: rgb(238, 238, 108);
+        }
+        .practice th{
+            background-color: whitesmoke;
+            color: black;
+        }
+        .lunch{
+            background-color: black;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Time Table</h1>
+    <table align="center">
+        <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Topic</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Monday</td>
+            <td>9:00 am to 10:00 am</td>
+            <td>Introduction to Web Development</td>
+        </tr>
+        <tr>
+            <td>10:00 am to 11:00am</td>
+            <td rowspan="2">Software Development</td>
+        </tr>
+        <tr>
+            <td>11:00am to 12:00 pm</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td colspan="2" class="highlight">No Class</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Wednesday</td>
+            <td colspan="2">Break</td>
+        </tr>
+        <tr>
+            <td>12:00 pm to 1:00 pm</td>
+            <td rowspan="2">Mobile App Development</td>
+        </tr>
+        <tr>
+            <td>1:00 pm to 2:00 pm</td>
+        </tr>
+    </table>
+
+    <h1 class="heading">Practice</h1>
+    <table align="center" class="practice">
+        <tr>
+            <th colspan="6">Time Table</th>
+        </tr>
+        <tr>
+            <th rowspan="6">Hours</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr class="lunch">
+            <td colspan="5">Lunch</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+        </tr>
+    </table>
+</body>
+</html>

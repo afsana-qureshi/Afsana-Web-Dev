@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border: none;
+    margin: 10px;   
+}
+
+button:active{
+    background-color: black;
+    color: white;
+}

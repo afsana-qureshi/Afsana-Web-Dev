@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON: JavaScript Object Notation</h1>
+    <script>
+        let object = {
+            name : "Sufyan",
+            age : 70,
+            email : "afs123@gmail.com",
+            city : "Karachi",
+        }
+        console.log(object);
+       let objStr = JSON.stringify(object)
+        localStorage.setItem("Information", JSON.stringify(object))
+         console.log(objStr);
+
+        let obj = JSON.parse(objStr)
+        console.log(obj);
+        localStorage.removeItem("object")
+       // localStorage.removeItem("Information")
+    </script>
+</body>
+</html>

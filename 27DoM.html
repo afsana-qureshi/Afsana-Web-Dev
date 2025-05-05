@@ -1,0 +1,104 @@
+<!-- Document Object Model -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        /*#btn{
+
+        }*/
+        #color{
+            background-color: bisque;
+        }
+        #sub{
+            background-color: beige;
+        }
+        .underline{
+            text-decoration: underline;
+            color: turquoise;
+        }
+        .display{
+            display: none;
+        }
+    </style>
+ </head>
+ <body>
+    <button id = "btn" class="button" onclick="changeText()">Subscribe</button>
+    <button id="color" onclick="changeColor()">Change Color</button>
+    <button id="sub" onclick="button()">Subscribe</button>
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio excepturi enim suscipit reiciendis omnis vitae vel officia, ad tenetur eligendi tempora illo neque ea. Voluptatum voluptate amet sit tempore! Nihil hic itaque sit. Reprehenderit quidem soluta nobis consequatur expedita sit dicta iure. Expedita vitae quidem voluptate vero aperiam eum unde laborum. Quidem labore amet quae nobis itaque id nulla quibusdam.
+    </p>
+    <button id="para-btn" onclick="toggle()">Show/Hide</button>
+    <h1 id="heading" onclick="underline()">Heading</h1>
+    <script>
+        //document.write("Hello World")
+        console.log(typeof document.body);
+       // document.body.innerHTML = "Hello World"
+       document.title = "New Text"
+       console.log(document.title);
+       //document.body.innerHTML = "<button>Click Here</button>"
+
+       let btn = document.getElementById("btn")
+       function changeText(){
+        if (btn.innerHTML == "Subscribe"){
+            btn.innerHTML = "Subscribed"
+            btn.classList.remove
+        }
+        else{
+            btn.innerHTML = "Subscribe"
+        }
+       }
+
+       function changeColor(){
+        let btn = document.getElementById('color')
+        if (btn.style.backgroundColor =="bisque"){
+            btn.style.backgroundColor = "green"
+        }
+        else {
+            btn.style.backgroundColor = "bisque"
+        }
+       }
+
+       let sub = document.getElementById("sub")
+       function button(){
+        if (sub.innerHTML == "Subscribe"){
+            sub.innerHTML = "Subscribed"
+        }
+        else{
+            sub.innerHTML = "Subscribe"
+        }
+        let btn = document.getElementById('sub')
+        if (sub.style.backgroundColor =="beige"){
+            sub.style.backgroundColor = "red"
+        }
+        else {
+            sub.style.backgroundColor = "beige"
+        }
+       }
+
+        //  if (para.style.display == "none"){
+        //       para.style.display = "block"
+        //     }
+        // else {
+        //      para.style.display = "none"
+        //    }
+
+       function underline(){
+        let heading = document.getElementById('heading')
+        heading.classList.add("underline", "highligth")
+    }
+
+    function toggle(){
+        let para = document.getElementById('para')
+        para.classList.toggle('display')
+    }
+    
+       console.log(document.getElementById("btn").innerHTML)
+       // let btn1 = document.querySelector("#btn")
+       //console.log(`btn:`, btn, `btn1:`, btn1);
+    </script>
+ </body>
+ </html>
